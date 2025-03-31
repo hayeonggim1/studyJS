@@ -36,7 +36,7 @@
 */
 
 const fs = require("fs");
-const number = fs.readFileSync(0).toString().trim().split(" ");
+const number = fs.readFileSync(0).toString().trim().split("\n");
 
 const a = parseInt(number[0]);
 const b = parseInt(number[1]);
