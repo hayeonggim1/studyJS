@@ -119,20 +119,20 @@
 
 ##### boj
 * 문제 풀이
-  - 💻 A+B - [boj/01/02.js](./workspace-ins/boj/01/02.js)
-  - 💻 곱셈 - [boj/01/10.js](./workspace-ins/boj/01/10.js)
+  - 💻 A+B: [boj/01/02.js](./workspace-ins/boj/01/02.js)
+  - 💻 곱셈: [boj/01/10.js](./workspace-ins/boj/01/10.js)
 * 문제 추천
-  - 💻 A-B - [boj/01/03.js](./workspace-ins/boj/01/03.js)
-  - 💻 A×B - [boj/01/04.js](./workspace-ins/boj/01/04.js)
-  - 💻 A/B - [boj/01/05.js](./workspace-ins/boj/01/05.js)
-  - 💻 사칙연산 - [boj/01/06.js](./workspace-ins/boj/01/06.js)
-  - 💻 ??! - [boj/01/07.js](./workspace-ins/boj/01/07.js)
-  - 💻 1998년생인 내가 태국에서는 2541년생?! - [boj/01/08.js](./workspace-ins/boj/01/08.js)
-  - 💻 나머지 - [boj/01/09.js](./workspace-ins/boj/01/09.js)
-  - 💻 곱셈 - [boj/01/10.js](./workspace-ins/boj/01/10.js)
-  - 💻 꼬마 정민 - [boj/01/11.js](./workspace-ins/boj/11/02.js)
-  - 💻 고양이 - [boj/01/12.js](./workspace-ins/boj/01/12.js)
-  - 💻 개 - [boj/01/13.js](./workspace-ins/boj/01/13.js)
+  - 💻 A-B: [boj/01/03.js](./workspace-ins/boj/01/03.js)
+  - 💻 A×B: [boj/01/04.js](./workspace-ins/boj/01/04.js)
+  - 💻 A/B: [boj/01/05.js](./workspace-ins/boj/01/05.js)
+  - 💻 사칙연산: [boj/01/06.js](./workspace-ins/boj/01/06.js)
+  - 💻 ??!: [boj/01/07.js](./workspace-ins/boj/01/07.js)
+  - 💻 1998년생인 내가 태국에서는 2541년생?!: [boj/01/08.js](./workspace-ins/boj/01/08.js)
+  - 💻 나머지: [boj/01/09.js](./workspace-ins/boj/01/09.js)
+  - 💻 곱셈: [boj/01/10.js](./workspace-ins/boj/01/10.js)
+  - 💻 꼬마 정민: [boj/01/11.js](./workspace-ins/boj/11/02.js)
+  - 💻 고양이: [boj/01/12.js](./workspace-ins/boj/01/12.js)
+  - 💻 개: [boj/01/13.js](./workspace-ins/boj/01/13.js)
 
 ## 2주차 - 4일, 2025.03.31(월) ~ 2025.04.03(목)
 ### 3일차(월)
@@ -147,6 +147,7 @@
   - 💻 [01-11 비교 연산자 >, >=, <, <=, ==, !=, ===, !==](./workspace-ins/ch01/ex01-11.js)
   
 ##### 오후(3시간)
+* 📜 비교 연산자
   - 💻 [01-11-02 비교 연산자 - 다음 값들을 비교한 결과를 예측](./workspace-ins/ch01/ex01-11-02.js)
 * 📜 일치, 동등 연산자
 * 📜 논리 연산자
@@ -160,7 +161,92 @@
 ##### boj
 * 문제 풀이
 * 문제 추천
-  - 두 수 비교하기 - [boj/02/01.js](./workspace-ins/boj/02/01.js)
+  - 두 수 비교하기: [boj/02/01.js](./workspace-ins/boj/02/01.js)
+
+### 4일차(화)
+##### 오전(3시간)
+* 📜 if문
+  - 💻 [01-16 if문](./workspace-ins/ch01/ex01-16.js)
+  - 💻 [01-16-02 if문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-16-02.js)
+  - 💻 [01-16-03 if문을 이용하여 사용자와 로그인 상태 출력](./workspace-ins/ch01/ex01-16-03.js)
+* 📜 if-else문
+  - 💻 [01-17 if-else문](./workspace-ins/ch01/ex01-17.js)
+
+##### 오후(3시간)
+* 📜 if-else문
+  - 💻 [01-17-02 if-else문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-17-02.js)
+  - 💻 [01-17-03 if-else문을 사용하여 사용자와 로그인 상태 출력](./workspace-ins/ch01/ex01-17-03.js)
+* 📜 if-else if문
+  - 💻 [01-18 if-else if문](./workspace-ins/ch01/ex01-18.js)
+  - 💻 [01-18-02 if-else if문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-18-02.js)
+  - 💻 [01-18-03 if-else if문을 사용하여 사용자와 로그인 상태 출력](./workspace-ins/ch01/ex01-18-03.js)
+  - 💻 [01-18-04 if-else if문을 사용하여 정보처리 기사 필기 시험 결과 출력](./workspace-ins/ch01/ex01-18-04.js)
+
+##### boj
+* 문제 풀이
+  - 💻 두 수 비교하기: [boj/02/01.js](./workspace-ins/boj/02/01.js)
+* 문제 추천
+  - 💻 시험 성적: [boj/02/02.js](./workspace-ins/boj/02/02.js)
+  - 💻 윤년: [boj/02/03.js](./workspace-ins/boj/02/03.js)
+  - 💻 사분면 고르기: [boj/02/04.js](./workspace-ins/boj/02/04.js)
+  - 💻 알람 시계: [boj/02/05.js](./workspace-ins/boj/02/05.js)
+  - 💻 오븐 시계: [boj/02/06.js](./workspace-ins/boj/02/06.js)
+  - 💻 주사위 세개: [boj/02/07.js](./workspace-ins/boj/02/07.js)
+
+### 5일차(수)
+##### 오전(3시간)
+* 📜 if-else if문
+  - 💻 [01-18-05 if-else if문을 사용하여 계산기, 요일, 계절 출력](./workspace-ins/ch01/ex01-18-05.js)
+* 📜 switch문
+  - 💻 [01-19 switch문](./workspace-ins/ch01/ex01-19.js)
+  - 💻 [01-19-02 switch문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-19-02.js)
+  - 💻 [01-19-03 switch문을 사용하여 계산기, 요일, 계절 출력](./workspace-ins/ch01/ex01-19-03.js)
+
+##### 오후(3시간)
+* 📜 while문
+  - 💻 [01-20 while문](./workspace-ins/ch01/ex01-20.js)
+  - 💻 [01-20-02 while문을 사용하여 홀수/짝수 합계 구하기](./workspace-ins/ch01/ex01-20-02.js)
+  - 💻 [01-20-03 while문을 사용하여 쌀알 모으기](./workspace-ins/ch01/ex01-20-03.js)
+  - 💻 [01-20-04 do-while문](./workspace-ins/ch01/ex01-20-04.js)
+* 📜 for문
+  - 💻 [01-21 for문](./workspace-ins/ch01/ex01-21.js)
+  - 💻 [01-21-02 for문을 사용하여 별찍기](./workspace-ins/ch01/ex01-21-02.js)
+
+##### boj
+* 문제 풀이
+  - 💻 두 수 비교하기 (if문으로 수정): [boj/02/01.js](./workspace-ins/boj/02/01.js)
+
+### 6일차(목)
+##### 오전(3시간)
+* 📜 for문
+  - 💻 [01-21-03 for문을 이용해서 구구단 작성](./workspace-ins/ch01/ex01-21-03.js)
+  - 💻 [01-22 break, continue](./workspace-ins/ch01/ex01-22.js)
+* 📜 참조 타입(Object, 객체)
+  - 💻 [01-23 new Object() - 생성자 함수로 객체 생성](./workspace-ins/ch01/ex01-23.js)
+  - 💻 [01-23-02 국어, 영어, 수학 총점과 평균 출력](./workspace-ins/ch01/ex01-23-02.js)
+
+##### 오후(3시간)
+* 📜 참조 타입(Function, 함수)
+  - 💻 [01-30 기본 함수](./workspace-ins/ch01/ex01-30.js)
+  - 💻 [01-31 매개변수를 가진 함수](./workspace-ins/ch01/ex01-31.js)
+  - 💻 [01-32 매개변수를 가진 함수 - 도어락](./workspace-ins/ch01/ex01-32.js)
+  - 💻 [01-33 반환값이 있는 함수](./workspace-ins/ch01/ex01-33.js)
+  - 💻 [01-34 반환값이 있는 함수 - 토스터](./workspace-ins/ch01/ex01-34.js)
+
+##### boj
+* 문제 추천
+  - 💻 구구단: [boj/03/01.js](./workspace-ins/boj/03/01.js)
+  - 💻 A+B - 3: [boj/03/02.js](./workspace-ins/boj/03/02.js)
+  - 💻 합: [boj/03/03.js](./workspace-ins/boj/03/03.js)
+  - 💻 영수증: [boj/03/04.js](./workspace-ins/boj/03/04.js)
+  - 💻 코딩은 체육과목 입니다: [boj/03/05.js](./workspace-ins/boj/03/05.js)
+  - 💻 빠른 A+B: [boj/03/06.js](./workspace-ins/boj/03/06.js)
+  - 💻 A+B - 7: [boj/03/07.js](./workspace-ins/boj/03/07.js)
+  - 💻 A+B - 8: [boj/03/08.js](./workspace-ins/boj/03/08.js)
+  - 💻 별 찍기 - 1: [boj/03/09.js](./workspace-ins/boj/03/09.js)
+  - 💻 별 찍기 - 2: [boj/03/10.js](./workspace-ins/boj/03/10.js)
+  - 💻 A+B - 5: [boj/03/11.js](./workspace-ins/boj/03/11.js)
+  - 💻 A+B - 4: [boj/03/12.js](./workspace-ins/boj/03/12.js)
 
 
 # 참고 사이트
