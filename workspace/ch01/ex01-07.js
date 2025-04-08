@@ -1,43 +1,21 @@
 /*
-기본 데이터 타입 - Number, String, Boolean, undefined, null
+기본 데이터 타입 - BigInt
 */
 
-// number
-var num = 100;
-var floatNum = 3.14;
+var maxNum = Number.MAX_VALUE; // number로 표현 가능한 최대값
+var maxSafeNum = Number.MAX_SAFE_INTEGER; // 정확한 정수의 최대값(9007199254740991, 약 9000조)
 
-// string
-var s1 = "single quote";
-var s2 = "double quote";
-
-// boolean
-var b1 = true;
-var b2 = false;
-
-//undefined
-var emptyVal;
-
-//null
-var nullVal = null;
-
-console.log(num, floatNum, s1, s2, b1, b2, emptyVal, nullVal);
-
-console.log(num);
-console.log(floatNum);
-console.log(s1);
-console.log(s2);
-console.log(b1);
-console.log(b2);
-console.log(emptyVal);
-console.log(nullVal);
-
+console.log(maxNum, maxSafeNum);
 console.log(
-  typeof num,
-  typeof floatNum,
-  typeof s1,
-  typeof s2,
-  typeof b1,
-  typeof b2,
-  typeof emptyVal,
-  typeof nullVal
+  maxSafeNum - 1,
+  maxSafeNum,
+  maxSafeNum + 1,
+  maxSafeNum + 2,
+  maxSafeNum + 3
 );
+
+// BigInt
+var b1 = 12345n;
+var b2 = BigInt(maxSafeNum);
+
+console.log(b2 - 1n, b2, b2 + 1n, b2 + 2n, b2 + 3n);
