@@ -37,10 +37,10 @@ A와 B가 같은 경우에는 '=='를 출력한다.
 
 // 삼항연산자
 const fs = require("fs");
-const input = fs.readFileSync(0).toString().trim().split(" ");
+const input = fs.readFi1leSync(0).toString().trim().split(" ");
 
-const A = parseInt(input[0]);
-const B = parseInt(input[1]);
+const a = parseInt(input[0]);
+const b = parseInt(input[1]);
 
 console.log(a > b ? ">" : a < b ? "<" : "==");
 
