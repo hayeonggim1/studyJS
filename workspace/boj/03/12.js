@@ -1,7 +1,7 @@
 /*
-제목: A+B - 5
-설명: 0 0이 들어올 때까지 A+B를 출력하는 문제
-제출: https://www.acmicpc.net/submit/10952
+제목: A+B - 4
+설명: 입력이 끝날 때까지 A+B를 출력하는 문제. EOF에 대해 알아 보세요.
+제출: https://www.acmicpc.net/submit/10951
 
 문제
 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
@@ -9,7 +9,6 @@
 입력
 입력은 여러 개의 테스트 케이스로 이루어져 있다.
 각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 < A, B < 10)
-입력의 마지막에는 0 두 개가 들어온다.
 
 출력
 각 테스트 케이스마다 A+B를 출력한다.
@@ -20,7 +19,6 @@
 3 4
 9 8
 5 2
-0 0
 
 예제 출력 1
 2
@@ -34,13 +32,10 @@ const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim().split("\n");
 let i = 0;
 
-while (i >= 0) {
+while (i < input.length) {
   const line = input[i].split(" "); // split은 문자열과 함께 사용. 즉 input[i]를 parseInt로 묶지 않아야 함. (숫자가 됨)
   const a = parseInt(line[0]);
   const b = parseInt(line[1]);
-  if (a === 0 && b === 0) {
-    break;
-  }
   console.log(a + b);
   i++;
 }
