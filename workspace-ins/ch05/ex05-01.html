@@ -16,12 +16,87 @@
 
   <script>
     // id가 "purchases"인 요소노드를 찾음
-    const shoppingList = document.getElementById('purchases');
+    // const shoppingList = document.getElementById('purchases'); // ul
+    
+    const shoppingList = document.getElementsByClassName('list'); // ul
+
     // 제일 먼저 구매해야 할 항목은 무엇인가?
-    const liList = shoppingList.getElementsByTagName('li');
-    console.log(liList);
-    const firstLi = liList[0];
+    // const liList = shoppingList.getElementsByTagName('li'); // [li, li, li]
+    // console.log(liList);
+    // const firstLi = liList[0]; // <li>두부</li>
+    const firstLi = shoppingList.firstElementChild; // <li>두부</li>
     console.log(firstLi);
+    const firstTextNode = firstLi.firstChild; // 두부 object
+    console.log(firstTextNode);
+    console.log('제일 먼저 구매할 항목', firstTextNode.nodeValue); // 두부 string
+
+    // 첫번째 구매할 항목을 양파로 수정
+    firstTextNode.nodeValue = '양파';
+
+    // 마지막으로 사야할 품목 출력
+    console.log('마지막으로 사야할 품목', shoppingList.lastElementChild.firstChild.nodeValue)
+
+    // 최승균
+    // 코카콜라맛있다 맛있으면 또먹어
+    // 또먹으면 배탈나~
+    // const firstChild = shoppingList.firstElementChild;
+    // let cocacola = firstChild.nextElementSibling;
+    // let i = 0;
+    // while (i < 9) {
+    //   if (i % 2 == 0) {
+    //     cocacola = cocacola.nextElementSibling;
+    //   } else {
+    //     cocacola = cocacola.previousElementSibling;
+    //   }
+    //   i++;
+    // }
+    // console.log(cocacola.firstChild.nodeValue);
+
+    // 최승균(오류, 버그, 에러가 아닌 버그, 이게 더 문제)
+    // const firstChild = shoppingList.firstElementChild;
+    // let cocacola = firstChild.nextElementSibling;
+    // cocacola = firstChild.nextElementSibling;
+    // console.log(cocacola.firstChild.nodeValue);
+
+    // 임한길
+    // const liList = shoppingList.getElementsByTagName('li'); // [li, li, li]
+    // const lastLi = liList[liList.length-1];
+    // const lastText = lastLi.firstChild.nodeValue;
+
+    // 송채은
+    // 라면꺼내기
+    // const lastli =
+    //     firstLi.nextElementSibling.nextElementSibling.firstChild.nodeValue;
+    //   console.log(`지금하고있는거 : ${lastli}`);
+
+    // 노현수
+    // const lastTextNode = shoppingList.lastElementChild.firstChild;
+    // console.log('마지막으로 구매할 항목', lastTextNode.nodeValue);
+
+    // 박선영
+    // const purchases = document.getElementById('purchase');
+    // let purchaseItem = purchases.firstElementChild;
+    // while (purchaseItem.nextElementSibling) {
+    //   purchaseItem = purchaseItem.nextElementSibling;
+    // }
+    // console.log('드디어탈출', purchaseItem.firstChild.nodeValue);
+
+    // 구성연
+    // const lastLi = shoppingList.lastElementChild.firstChild;
+    // console.log("마지막으로 사야할 품목", lastLi.nodeValue);
+
+    // 조현수
+    // const product = shoppingList.getElementsByTagName("li");
+    // for (let i = 0; i < product.length; i++) {
+    //   let buyProduct = li[i];
+    //   if (i % 2 === 0) {
+    //     if (i === 0) {
+    //       continue;
+    //     }
+    //     console.log(buyProduct.firstChild.nodeValue);
+    //     break;
+    //   }
+    // }
   </script>
 </body>
 </html>
