@@ -38,3 +38,19 @@
 예제 출력 3
 1
 */
+
+const fs = require("fs");
+const input = fs.readFileSync(0, "utf8").toString().trim().split("\n");
+
+const nums = parseInt(input[0]);
+const num = parseInt(input[2]);
+let count = 0;
+const assign = input[1].split(" ");
+
+for (let i = 0; i < nums; i++) {
+  if (parseInt(assign[i]) === num) {
+    count++;
+  }
+}
+
+console.log(count);
