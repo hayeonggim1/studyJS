@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +11,17 @@
     </header>
     <div id="container">
       <span>0</span>
-      <button></button>
+      <button>+</button>
     </div>
     <script>
-      // id가 "container"인 요소를 찾기
+      // container 하위의 button 요소 찾기
+      const btn = document.querySelector("#container > button");
+      const countSpan = document.querySelector("#container > span");
+
+      btn.addEventListener("click", function () {
+        const count = parseInt(countSpan.firstChild.nodeValue);
+        countSpan.firstChild.nodeValue = count + 1;
+      });
     </script>
   </body>
 </html>
