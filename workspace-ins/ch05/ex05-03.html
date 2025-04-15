@@ -39,16 +39,30 @@
         // textContent: 요소노드의 내부 텍스트노드의 문자열 값을 가지고 있는 속성
         console.log(secondLi.textContent);
       };
+
+      // 이벤트 등록 방법 3: addEventListener()
+      btn3.addEventListener('click', function(){
+        const targetList = document.querySelectorAll('.list');
+        for(let i=0; i<targetList.length; i++){
+          // i=0 <li>두부</li>, i=1 <li>어벤저스</li>
+          const firstLi = targetList[i].firstElementChild;
+          // 해당노드를 삭제한다.
+          firstLi.remove();
+        }
+      });
     });
 
-
+    
     // 마지막에 우유 추가
     function addMilk(){
       console.log('우유 추가 예정');
+
       const shoppingList = document.getElementById('purchases');
-      // innerHTML: 요소노드의 내부 HTML 코드값을 문자열로 가지고 있는 속성
+      // innerHTML: 요소노드의 내부 HTML 코드값을 문자열로 가지고 있는 속성(자신 제외)
       console.log(shoppingList.innerHTML);
-      
+      // innerHTML: 요소노드의 내부 HTML 코드값을 문자열로 가지고 있는 속성(자신 포함)
+      console.log(shoppingList.outerHTML);
+      shoppingList.innerHTML += '<li>우유</li>';
     }
     
 
