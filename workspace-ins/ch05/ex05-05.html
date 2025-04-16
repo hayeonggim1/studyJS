@@ -17,7 +17,7 @@
             <h2>쇼핑 목록</h2>
             <div class="todoinput">
               <input type="text" autofocus>
-              <button type="button">추가</button>
+              <button type="button" onclick="handleAdd()">추가</button>
             </div>
             <ul class="todolist">
               <li>
@@ -48,19 +48,78 @@
   <script>
     // 한건의 Todo 객체를 받아서 DOM 객체로 만들어 반환
     function getTodoItemElem(item){
-      // { no: 3, title: '라면', done: true } // Todo 객체
+      // item -> { no: 3, title: '라면', done: true } // Todo 객체
       /* DOM 객체
-      <li>
+      return <li>
         <span>3</span>
         <span>샘플3</span>
         <button type="button">삭제</button>
       </li>
       */
+
+      // <li>
+      const liElem = document.createElement('li');
+      // <span>
+      const noElem = document.createElement('span');
+      // <span>
+      const titleElem = document.createElement('span');
+      // <button>
+      const deleteElem = document.createElement('button');
+
+      // 3
+      const noTxt = document.createTextNode(item.no);
+      // 샘플3
+      const titleTxt = document.createTextNode(item.title);
+      // 삭제
+      const deleteTxt = document.createTextNode('삭제');
+
+      // <span>3</span>
+      noElem.appendChild(noTxt);
+      // <span>샘플3</span>
+      titleElem.appendChild(titleTxt);
+      // <button type="button">삭제</button>
+      deleteElem.setAttribute('type', 'button');
+      deleteElem.appendChild(deleteTxt);
+
+      // <li><span>3</span></li>
+      liElem.appendChild(noElem);
+      // <li><span>3</span><span>샘플3</span></li>
+      liElem.appendChild(titleElem);
+      // <li><span>3</span><span>샘플3</span><button type="button">삭제</button></li>
+      liElem.appendChild(deleteElem);
+
+      // <li>
+      //   <span>3</span>
+      //   <span>샘플3</span>
+      //   <button type="button">삭제</button>
+      // </li>
+      return liElem;
     }
+
+
+    // "추가" 버튼 클릭 이벤트 핸들러
+    function handleAdd(){
+      const inputElem = document.querySelector('.todoinput > input');
+      addItem(inputElem.value);
+    }
+
+    // let itemNo = 3;
 
     // 할일 추가
     function addItem(title){
+      const todoList = document.querySelector('.todolist');
 
+      const item = {
+        no: todoList.length + 1,
+        // no: ++itemNo,
+        // title: title, // 속성값을 담는 변수가 속성명과 일치할 경우 속성값 생략 가능
+        title,
+        done: false // 미완료 상태
+      };
+      const todoLi = getTodoItemElem(item);
+      console.log(todoLi);
+      
+      todoList.appendChild(todoLi);
     }
 
     // 완료/미완료 처리
