@@ -39,3 +39,7 @@ console.log(s2.avg()); // 60
 
 console.log(s1.sum === s2.sum); // false
 console.log(s1.avg === s2.avg); // true
+
+console.log(s1.toString()); // [object Object]
+console.log(s1.hasOwnProperty('sum')); // true
+console.log(s1.hasOwnProperty('avg')); // false
