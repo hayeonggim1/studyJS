@@ -14,4 +14,15 @@
   const num = echo<number>(123.456);
 
   console.log(str.toUpperCase(), num.toFixed(2));
+
+  function echo2<T extends { length: number }>(msg: T): T {
+    return msg;
+  }
+
+  // echo2<number>(100); // length 속성이 없음
+  const str2 = echo2<string>('hello');
+  const num2 = echo2<number[]>([10, 20]);
+
+  console.log(str2.length, num2.length);
+
 })();
