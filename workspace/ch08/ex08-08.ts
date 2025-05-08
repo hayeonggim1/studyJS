@@ -1,0 +1,20 @@
+// 비동기 함수 - Promise 사용
+// 비동기 함수를 사용하는 함수도 비동기 함수가 됨
+// 비동기 함수의 작업이 완료된 후 실행할 코드가 있으면 Promise 사용
+// ex08-07-03.ts 복사
+
+
+(()=>{
+
+  console.log('시작');
+
+  const timerId = setInterval((a: number, b: number) => {
+    console.log('3초 후에 실행됩니다.', a + b);
+  }, 1000*3, 10, 20);
+
+  console.log('종료');
+
+  // timeout 작업 취소
+  // clearInterval(timerId);
+  
+})();
