@@ -15,7 +15,7 @@ function getImages(): void{
   const xhr = new XMLHttpRequest();
 
   // 2. 요청 준비(open)
-  xhr.open('GET', url, false);
+  xhr.open('GET', url, true);
 
   // 4. 응답 데이터 처리
   xhr.addEventListener('load', function() {
